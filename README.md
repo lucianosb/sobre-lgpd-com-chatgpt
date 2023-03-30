@@ -1,57 +1,34 @@
 # Sobre LGPD com chatGPT
 
-Experiência de geração de slides com gpt-4. Para a documentação do reveal.js leia abaixo.
+Experiência de geração de slides com gpt-4 e [reveal.js](https://github.com/hakimel/reveal.js).
 
---- 
+## Motivação
 
+Durante uma conversa entre amigos, surgiu a ideia de uma IA que pudesse gerar apresentações a partir de um roteiro. Eu sugeri, então que o chatGPT seria capaz de fazer isso utilizando instruções de qual framework usar para montar os slides. 
 
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+Supus que tal iniciativa pudesse ajudar na concepção inicial de uma apresentação corporativa formal, ou uma aula sobre determinado tema com teor mais textual. Se o teste for útil, tal fluxo pode ser automatizado por meio da API da openAI especificamente para essa finalidade.
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).
+## Processo
 
-The framework comes with a powerful feature set including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX typesetting](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and an [extensive API](https://revealjs.com/api/).
+Minha hipótese era de que o GPT seria capaz de calcular corretamente tanto o domínio linguístico do tema a ser discutido na apresentação quanto o código a ser utilizado para os slides. Para que isso pudesse ser feito, usei o GPT-4 pela interface [Chatbotui](https://www.chatbotui.com) com o seguinte prompt: 
 
----
+> faça 10 slides em reveal.js explicando a LGPD
 
-Want to create reveal.js presentation in a graphical editor? Try <https://slides.com>. It's made by the same people behind reveal.js.
+O resultado foram várias **<section>** com o conteúdo de cada slide pronto para ser inserido no index.html padrão do reveal.js
 
----
+Para encerrar a apresentação em bom tom, dei mais um comando:
 
-### Sponsors
-Hakim's open source work is supported by <a href="https://github.com/sponsors/hakimel">GitHub sponsors</a>. Special thanks to:
-<div align="center">
-  <table>
-    <td align="center">
-      <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
-        <div>
-          <img src="https://user-images.githubusercontent.com/629429/151508669-efb4c3b3-8fe3-45eb-8e47-e9510b5f0af1.svg" width="290" alt="WorkOS">
-        </div>
-        <b>Your app, enterprise-ready.</b>
-        <div>
-          <sub>Start selling to enterprise customers with just a few lines of code. Add Single Sign-On (and more) in minutes instead of months.</sup>
-        </div>
-      </a>
-    </td>
-  </table>
-</div>
+> inclua um slide de agradecimento com um gif engraçado do tenor.com
 
----
+Ainda que tenha gerado todo o código corretamente, a ID do gif sugerido foi uma string aleatória não existente. A única ação que eu precisei fazer foi acessar o Tenor e buscar a URL correta do gif.
 
-### Getting started
-- 🚀 [Install reveal.js](https://revealjs.com/installation)
-- 👀 [View the demo presentation](https://revealjs.com/demo)
-- 📖 [Read the documentation](https://revealjs.com/markup/)
-- 🖌 [Try the visual editor for reveal.js at Slides.com](https://slides.com/)
-- 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
+## Conclusão
+
+A geração dos slides me custou apenas R$0.72 centavos. Julguei barato demais para uma ferramenta que foi capaz de gerar em segundos um código útil, bem-estruturado e com informações relevantes sobre um tema jurídico. 
+
+Alternativas de código-aberto ao chatGPT serão importantes para democratização dessa tecnologia e garantir autonomia às instituições e profissionais que desejem incorporar tais ferramentas aos seus processos produtivos e criativos.
 
 --- 
 <div align="center">
-  MIT licensed | Copyright © 2011-2023 Hakim El Hattab, https://hakim.se
+  Reveal.js is MIT licensed | Copyright © 2011-2023 Hakim El Hattab, https://hakim.se
 </div>
