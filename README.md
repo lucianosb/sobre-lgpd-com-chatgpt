@@ -14,7 +14,7 @@ Minha hipótese era de que o GPT seria capaz de calcular corretamente tanto o do
 
 > faça 10 slides em reveal.js explicando a LGPD
 
-O resultado foram várias **<section>** com o conteúdo de cada slide pronto para ser inserido no index.html padrão do reveal.js
+O resultado foram várias tags _section_ com o conteúdo de cada slide pronto para ser inserido no index.html padrão do reveal.js
 
 Para encerrar a apresentação em bom tom, dei mais um comando:
 
